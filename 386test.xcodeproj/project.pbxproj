@@ -12,6 +12,8 @@
 		2663E2F221946BAF005D7D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663E2F021946BAF005D7D04 /* Main.storyboard */; };
 		2663E2F421946BAF005D7D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2663E2F321946BAF005D7D04 /* Assets.xcassets */; };
 		2663E2F721946BAF005D7D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663E2F521946BAF005D7D04 /* LaunchScreen.storyboard */; };
+		2663E30221946BC2005D7D04 /* test1.c in Sources */ = {isa = PBXBuildFile; fileRef = 2663E2FF21946BC2005D7D04 /* test1.c */; };
+		2663E30321946BC2005D7D04 /* test2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2663E30021946BC2005D7D04 /* test2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		2663E2F321946BAF005D7D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2663E2F621946BAF005D7D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2663E2F821946BAF005D7D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2663E2FE21946BC2005D7D04 /* 386test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "386test-Bridging-Header.h"; sourceTree = "<group>"; };
+		2663E2FF21946BC2005D7D04 /* test1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = test1.c; path = "../../../../Downloads/386test-master/1integral/test1.c"; sourceTree = "<group>"; };
+		2663E30021946BC2005D7D04 /* test2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = test2.c; path = "../../../../Downloads/386test-master/1integral/test2.c"; sourceTree = "<group>"; };
+		2663E30121946BC2005D7D04 /* sin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sin.h; path = "../../../../Downloads/386test-master/1integral/sin.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,16 @@
 		2663E2EB21946BAF005D7D04 /* 386test */ = {
 			isa = PBXGroup;
 			children = (
+				2663E30121946BC2005D7D04 /* sin.h */,
+				2663E2FF21946BC2005D7D04 /* test1.c */,
+				2663E30021946BC2005D7D04 /* test2.c */,
 				2663E2EC21946BAF005D7D04 /* AppDelegate.swift */,
 				2663E2EE21946BAF005D7D04 /* ViewController.swift */,
 				2663E2F021946BAF005D7D04 /* Main.storyboard */,
 				2663E2F321946BAF005D7D04 /* Assets.xcassets */,
 				2663E2F521946BAF005D7D04 /* LaunchScreen.storyboard */,
 				2663E2F821946BAF005D7D04 /* Info.plist */,
+				2663E2FE21946BC2005D7D04 /* 386test-Bridging-Header.h */,
 			);
 			path = 386test;
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 				TargetAttributes = {
 					2663E2E821946BAF005D7D04 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -135,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2663E30221946BC2005D7D04 /* test1.c in Sources */,
 				2663E2EF21946BAF005D7D04 /* ViewController.swift in Sources */,
+				2663E30321946BC2005D7D04 /* test2.c in Sources */,
 				2663E2ED21946BAF005D7D04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +295,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9B74EE253N;
+				DEVELOPMENT_TEAM = T94BD3WX85;
 				INFOPLIST_FILE = 386test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +305,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Xim.-86test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "386test/386test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +316,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9B74EE253N;
+				DEVELOPMENT_TEAM = T94BD3WX85;
 				INFOPLIST_FILE = 386test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Xim.-86test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "386test/386test-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
